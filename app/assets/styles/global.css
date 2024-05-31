@@ -1,0 +1,11 @@
+@layer reset, base, tokens, recipes, utilities;
+
+@font-face {
+  src: url("../fonts/PlusJakartaSans.ttf") format("truetype");
+  font-family: "Plus Jakarta Sans";
+}
+
+body {
+  font-family: "Plus Jakarta Sans";
+  overflow: hidden;
+}

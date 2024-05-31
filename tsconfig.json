@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": true,
+
+    "module": "esnext",
+    "target": "esnext",
+
+    "isolatedModules": true,
+    "moduleResolution": "bundler",
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    "jsx": "react-jsx",
+
+    "types": [
+      "@remix-run/node",
+      "vite/client"
+    ],
+
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "app/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "dev": "remix vite:dev",
+    "build": "tsc && remix vite:build",
+    "prepare": "husky && panda codegen"
+  },
+  "dependencies": {
+    "@remix-run/node": "^2.9.2",
+    "@remix-run/react": "^2.9.2",
+    "@tanstack/react-query": "^5.37.1",
+    "node-html-parser": "^6.1.13",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@pandacss/dev": "^0.39.1",
+    "@remix-run/dev": "^2.9.2",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "husky": "^9.0.11",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": "eslint --fix"
+  }
+}
