@@ -1,11 +1,11 @@
 import { styled } from "~/styled-system/jsx";
 
-export interface WidgetPreviewProps {
+export interface OverlayPreviewProps {
   campaignUrl: string;
 }
 
-export function WidgetPreview(props: WidgetPreviewProps) {
-  const { href } = new URL(`/campaigns/${props.campaignUrl}/widget`, import.meta.env.VITE_BASE_URL);
+export function OverlayPreview(props: OverlayPreviewProps) {
+  const { href } = new URL(`/overlay/${props.campaignUrl}`, import.meta.env.VITE_BASE_URL);
 
   return (
     <styled.div css={{ pos: "sticky", top: 0 }}>

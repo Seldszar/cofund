@@ -3,7 +3,7 @@ import { useMemo } from "react";
 
 import { Container, Flex, styled } from "~/styled-system/jsx";
 
-import { WidgetPreview } from "~/components/WidgetPreview";
+import { OverlayPreview } from "~/components/OverlayPreview";
 
 export default function Component() {
   const { handleChange, values } = useFormik({
@@ -38,7 +38,7 @@ export default function Component() {
         </styled.div>
 
         <styled.div css={{ flex: { lg: 1 } }}>
-          {campaignUrl && <WidgetPreview campaignUrl={campaignUrl} />}
+          {campaignUrl && <OverlayPreview campaignUrl={campaignUrl} />}
         </styled.div>
       </Container>
 
