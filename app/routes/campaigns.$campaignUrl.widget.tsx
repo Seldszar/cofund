@@ -26,8 +26,8 @@ export default function Component() {
   const currencyFormat = useCurrencyFormat(data.currencyCode);
 
   return (
-    <styled.div css={{ bg: "white", display: "flex", overflow: "hidden", rounded: "md" }}>
-      <styled.img css={{ aspectRatio: "square", flex: "none", objectFit: "cover", w: 28 }} src={data.imageUrl} />
+    <styled.div css={{ bg: "white", display: "flex", h: 124, overflow: "hidden", rounded: "md" }}>
+      <styled.img css={{ flex: "none", objectFit: "cover", w: 28 }} src={data.imageUrl} />
       <styled.div css={{ flex: 1, p: 4, pb: 2 }}>
         <styled.div css={{ fontSize: "xl", fontWeight: "bold", truncate: true }}>{data.name}</styled.div>
         <styled.div css={{ fontSize: "lg" }}>{currencyFormat.format(data.currentAmount)} <styled.span css={{ color: "#767676", fontSize: "xs" }}>raised of {currencyFormat.format(data.goalAmount)} goal</styled.span></styled.div>
